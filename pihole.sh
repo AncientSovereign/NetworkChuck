@@ -11,7 +11,7 @@ docker run -d \
     -e TZ="America/Phoenix" \
     -v "$(pwd)/etc-pihole/:/etc/pihole/" \
     #-v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
-    --dns=127.0.0.1 --dns=1.1.1.1 \
+    --dns=192.168.0.1 \
     --restart=unless-stopped \
     thenetworkchuck/networkchuck_pihole
 
